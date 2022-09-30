@@ -1,4 +1,4 @@
-ArrayList<Ring> poop = new ArrayList();
+ArrayList<Ring> W = new ArrayList();
 
 int diameter = 16;
 float t = 0.0;
@@ -12,7 +12,7 @@ void setup() {
     for (int y=0;y<20;y++) {
       int index = x +y*10;
       Ring R = new Ring(x*30, y*30, index, 20);
-      poop.add(R);
+      W.add(R);
     }
   }
 }
@@ -28,9 +28,9 @@ void draw() {
 
   translate(750,250);
   rotate(PI/2);
-  for (int i=0;i<poop.size();i++)
+  for (int i=0;i<W.size();i++)
   {
-    Ring r = (Ring) poop.get(i);
+    Ring r = (Ring) W.get(i);
     r.display();
     r.update();
   }
